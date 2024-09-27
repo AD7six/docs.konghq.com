@@ -6,6 +6,18 @@ If you're running {{site.base_gateway}} with a database (either in traditional
 or hybrid mode), you can enable {{site.base_gateway}}'s graphical user interface
 (GUI), Kong Manager.
 
+{:.note}
+> **Note**: To configure Kong Manager to be accessible from multiple domains, you can list the domains as comma-separated values and assign them to the `admin_gui_url` parameter in your Kong configuration. Here's an example:
+  ```
+  admin_gui_url = http://localhost:8002, http://127.0.0.1:8002
+  ```
+> If you are set the `admin_gui_path` in your Kong configuration as well.
+  ```
+  admin_gui_url = http://localhost:8002/manager, http://127.0.0.1:8002/manager
+  admin_gui_path = /manager
+  ```
+> Make sure that each domain has proper DNS records and that the Kong instance is accessible from all specified domains.
+
 {% navtabs %}
 {% navtab Docker %}
 
