@@ -9,7 +9,7 @@ The Rate Limiting Advanced plugin offers more functionality than the {{site.base
 * Support for Redis Sentinel, Redis cluster, and Redis SSL
 * Increased performance: Rate Limiting Advanced has better throughput performance with better accuracy. The plugin allows you to tune performance and accuracy via a configurable synchronization of counter data with the backend storage. This can be controlled by setting the desired value on the `sync_rate` parameter.
 * More limiting algorithms to choose from: These algorithms are more accurate and they enable configuration with more specificity. Learn more about our algorithms in [How to Design a Scalable Rate Limiting Algorithm](https://konghq.com/blog/how-to-design-a-scalable-rate-limiting-algorithm).
-* More control over which requests contribute to incrementing the rate limiting counters via the `disable_penalty` parameter
+* x More control over which requests contribute to incrementing the rate limiting counters via the `disable_penalty` parameter
 {% if_version gte:3.4.x %}
 * Consumer groups support: Apply different rate limiting configurations to select groups of consumers. Learn more in [Rate limiting for consumer groups](/hub/kong-inc/rate-limiting-advanced/how-to/)
 {% endif_version %}
